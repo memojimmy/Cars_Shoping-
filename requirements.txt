@@ -1,9 +1,0 @@
-streamlit==1.53.1
-pandas==2.2.3
-numpy
-plotly
-scikit-learn
-catboost
-joblib
-matplotlib
-seaborn
