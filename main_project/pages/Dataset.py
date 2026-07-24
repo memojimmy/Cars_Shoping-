@@ -17,8 +17,11 @@ st.set_page_config(
 def load_data():
 
     BASE_DIR = Path(__file__).resolve().parent.parent
-    data_path = BASE_DIR / "cleaned.csv"
-    df = pd.read_csv('cleaned.csv',index_col=0)
+    DATA_PATH = BASE_DIR / "cleaned.csv"
+
+    @st.cache_data
+    def load_data():
+    df = pd.read_csv(DATA_PATH, index_col=0)
     return df
 
 df = load_data()
