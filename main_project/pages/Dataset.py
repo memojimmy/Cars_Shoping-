@@ -23,8 +23,6 @@ def load_data():
 
 df = load_data()
 
-df = load_data()
-
 # -------------------------
 # Load Model
 # -------------------------
