@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.express as px
 import joblib
 from pathlib import Path
+from catboost import CatBoostRegressor
 
 st.set_page_config(
     page_title="BMW Cars Price Prediction",
