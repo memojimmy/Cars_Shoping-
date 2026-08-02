@@ -32,7 +32,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 @st.cache_resource
 def load_model():
     model_path = BASE_DIR / "Regg_model.pkl"
-    return joblib.load("Regg_model.pkl")
+    return joblib.load(model_path)
 
 model = load_model()
 
