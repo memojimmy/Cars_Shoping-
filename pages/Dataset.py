@@ -24,13 +24,14 @@ def load_data():
 
 df = load_data()
 
-df = load_data()
-
 # -------------------------
 # Load Model
 # -------------------------
+BASE_DIR = Path(__file__).resolve().parent.parent
+
 @st.cache_resource
 def load_model():
+    model_path = BASE_DIR / "Regg_model.pkl"
     return joblib.load("Regg_model.pkl")
 
 model = load_model()
